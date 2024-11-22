@@ -3,15 +3,14 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-
     "dev": "bun run tailwind && bun run serve'",
     "serve": "concurrently \"bun run tailwind:watch\" \"vite dev\"",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "tailwind:watch": "tailwindcss -i ./src/app.css -o ./static/output.css --watch",
-    "tailwind": "tailwindcss -i ./src/app.css -o ./static/output.css "
+    "tailwind:watch": "tailwindcss -i ./src/app.scss -o ./static/output.css --watch",
+    "tailwind": "tailwindcss -i ./src/app.scss -o ./static/output.css "
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -27,6 +26,7 @@
   },
   "dependencies": {
     "concurrently": "^9.1.0",
+    "sass": "^1.81.0",
     "svelte-icons": "^2.1.0"
   }
 }
