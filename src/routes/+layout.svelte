@@ -3,13 +3,14 @@
     import '../app.scss'
     import "../../static/output.css";
     import HeaderNavTop from "$lib/components/HeaderNavTop.svelte";
+    import HeaderNavMain from '$lib/components/HeaderNavMain.svelte';
 </script>
 
 <div class="flex flex-col h-screen w-screen">
     <header class="bg-gray-100">
         <HeaderNavTop />
         <div class="px-16">
-            <p>header2</p>
+            <HeaderNavMain/>
             <p>header3</p>
         </div>
     </header>

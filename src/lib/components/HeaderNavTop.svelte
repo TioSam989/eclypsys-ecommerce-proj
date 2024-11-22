@@ -10,7 +10,7 @@
 <div class="flex bg-black px-16 py-2 flex-row py-3">
     <div class="flex flex-1 gap-x-2 justify-start items-center flex-row">
         <div
-            class="flex flex-row cursor-pointer items-center gap-2 text-white hover:text-red-500 transition duration-300 ease-in-out"
+            class="flex flex-row cursor-pointer items-center gap-2 text-white hover:text-primary transition duration-300 ease-in-out"
         >
             <div class="w-4 h-4">
                 <FaHeadset />
@@ -18,7 +18,7 @@
             <span class="text-xs"> TEL:(+41)21 694 33 33 </span>
         </div>
         <div
-            class="flex flex-row cursor-pointer items-center gap-2 text-white hover:text-red-500 transition duration-300 ease-in-out"
+            class="flex flex-row cursor-pointer items-center gap-2 text-white hover:text-primary transition duration-300 ease-in-out"
         >
             <div class="w-4 h-4">
                 <FaMapMarkerAlt />
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div
-        class="flex items-center cursor-pointer flex-row gap-2 items-center text-white hover:text-red-500 transition duration-300 ease-in-out"
+        class="flex items-center cursor-pointer flex-row gap-2 items-center text-white hover:text-primary transition duration-300 ease-in-out"
     >
         <div class="w-4 h-4">
             <FaRegUser />
