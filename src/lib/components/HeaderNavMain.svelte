@@ -11,7 +11,7 @@
     import FaShoppingCart from "svelte-icons/fa/FaShoppingCart.svelte";
 </script>
 
-<div class="flex flex-1 flex-row py-8">
+<div class="flex flex-1 flex-row ">
     <div class="flex flex-row bg-primary">
         <div class="flex p-2 items-center align-center">
             <div class="h-8 w-8 text-white">

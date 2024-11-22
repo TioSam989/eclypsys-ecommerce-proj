@@ -4,6 +4,7 @@
     import "../../static/output.css";
     import HeaderNavTop from "$lib/components/HeaderNavTop.svelte";
     import HeaderNavMain from '$lib/components/HeaderNavMain.svelte';
+    import SubHeaderNav from '$lib/components/SubHeaderNav.svelte';
 </script>
 
 <div class="flex flex-col h-screen w-screen">
@@ -11,7 +12,7 @@
         <HeaderNavTop />
         <div class="px-72">
             <HeaderNavMain/>
-            <p>header3</p>
+            <SubHeaderNav/>
         </div>
     </header>
     <div class="flex flex-col h-screen w-screen px-72">
