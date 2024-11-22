@@ -28,7 +28,7 @@
         </div>
     </div>
     <div
-        class="flex flex-row items-center justify-center gap-8 px-10 cursor-pointer text-black hover:text-primary border-2"
+        class="flex flex-row items-center justify-center gap-8 px-10 cursor-pointer text-black hover:text-primary border-y-2"
     >
         <strong class="text-black">CATÉGORIES</strong>
         <div class="h-4 w-4">
