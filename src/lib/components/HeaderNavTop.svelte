@@ -1,9 +1,8 @@
 <script>
-    // @ts-ignore
+// @ts-nocheck
+
     import FaHeadset from "svelte-icons/fa/FaHeadset.svelte";
-    // @ts-ignore
     import FaMapMarkerAlt from "svelte-icons/fa/FaMapMarkerAlt.svelte";
-    // @ts-ignore
     import FaRegUser from "svelte-icons/fa/FaRegUser.svelte";
 </script>
 
