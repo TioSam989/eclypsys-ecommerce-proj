@@ -9,12 +9,12 @@
 <div class="flex flex-col h-screen w-screen">
     <header class="bg-gray-100">
         <HeaderNavTop />
-        <div class="px-16">
+        <div class="px-72">
             <HeaderNavMain/>
             <p>header3</p>
         </div>
     </header>
-    <div class="flex flex-col h-screen w-screen px-16">
+    <div class="flex flex-col h-screen w-screen px-72">
         <main class="flex flex-1">
             <slot />
         </main>
