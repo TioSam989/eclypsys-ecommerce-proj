@@ -6,7 +6,7 @@
         <span class="uppercase font-semibold text-lg text-black uppercase"
             >Premium parts - free shipping</span
         >
-        <span class="uppercase font-semibold text-7xl text-black uppercase"
+        <span class="uppercase font-semibold text-4xl text-black uppercase"
             >New tires & Wheels</span
         >
         <span class="uppercase font-semibold text-lg text-black">$1.230</span>
@@ -16,7 +16,7 @@
             <span
                 class="absolute inset-0 bg-black translate-y-full transition-transform duration-300 group-hover:translate-y-0"
             ></span>
-            <span class="relative z-10">Shop now</span>
+            <span class="relative z-10 text-xs ">Shop now</span>
         </button>
     </div>
 
