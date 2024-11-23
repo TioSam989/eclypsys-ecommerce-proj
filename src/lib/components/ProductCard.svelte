@@ -31,11 +31,11 @@
         </button>
     </div>
 
-    <div class="flex flex-1 item-center justify-center w-full">
+    <div class="flex flex-1 item-center justify-center w-full py-4">
         <img
             alt="product"
             class="object-contain w-3/5 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto"
-            src="https://placehold.co/600x400/png"
+            src="https://placehold.co/700x800/png"
         />
     </div>
 </div>

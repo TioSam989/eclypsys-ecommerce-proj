@@ -43,10 +43,6 @@
             <slot />
         </main>
     </div>
-    <!-- <footer class="flex bg-secondary">
-        <FooterComponent />
-        </footer> -->
-
     <button
         class="floating-button bg-primary text-white rounded-none w-12 h-12 flex items-center justify-center shadow-lg {isVisible
             ? ''
@@ -56,6 +52,11 @@
     >
         <FaChevronUp />
     </button>
+    <!-- <footer class="flex bg-secondary">
+        <FooterComponent />
+        </footer> -->
+
+    
 </div>
 
 <style>

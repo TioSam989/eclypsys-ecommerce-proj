@@ -1,7 +1,7 @@
 <script lang="ts">
-    import BestSellersComponent from "$lib/components/BestSellersComponent.svelte";
     import ProductCard from "$lib/components/ProductCard.svelte";
     import RowCompaniesComponent from "$lib/components/RowCompaniesComponent.svelte";
+    import Section from "$lib/components/Section.svelte";
     import type { Product } from "../interfaces/product";
 
     const mainProduct: Product = {
@@ -21,7 +21,7 @@
             name: "Brake pads and brakes",
             type: "Premium",
             price: 280,
-            hasBackground: true
+            hasBackground: true,
         },
     ];
 </script>
@@ -29,7 +29,7 @@
 <div class="flex flex-1 flex-col gap-8">
     <ProductCard product={mainProduct} />
     <RowCompaniesComponent />
-    <BestSellersComponent />
+    <Section allOption={{ label: "All categories" }} title={"Best Seller"} />
     <div class="flex flex-1 flex-row h-auto mb-2 bg-green-500">
         <div class="flex flex-1 items-center justify-center">
             <ProductCard product={doubleCardProduct[0]} />
@@ -38,4 +38,5 @@
             <ProductCard product={doubleCardProduct[1]} />
         </div>
     </div>
+    <Section title={"By categories"} />
 </div>
