@@ -40,6 +40,5 @@
         </div>
     </div>
     <Section title={"By categories"} />
-    <LastUpdates/>
-
+    <LastUpdates />
 </div>

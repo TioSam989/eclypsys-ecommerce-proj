@@ -1,11 +1,11 @@
 <script>
-    // @ts-nocheck
     import "../app.scss";
     import "../../static/output.css";
     import HeaderNavTop from "$lib/components/HeaderNavTop.svelte";
     import HeaderNavMain from "$lib/components/HeaderNavMain.svelte";
     import SubHeaderNav from "$lib/components/SubHeaderNav.svelte";
     import FooterComponent from "$lib/components/FooterComponent.svelte";
+    // @ts-ignore
     import FaChevronUp from "svelte-icons/fa/FaChevronUp.svelte";
 
     import { onMount } from "svelte";
