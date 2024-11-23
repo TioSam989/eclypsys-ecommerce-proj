@@ -30,7 +30,7 @@
     });
 </script>
 
-<div class="flex flex-col h-screen w-screen">
+<div class="flex flex-col min-h-screen">
     <header>
         <HeaderNavTop />
         <div class="px-72">
@@ -38,11 +38,13 @@
             <SubHeaderNav />
         </div>
     </header>
-    <div class="flex flex-1 flex-col h-screen w-screen px-72">
+
+    <div class="flex-1 flex flex-col px-72">
         <main class="flex flex-1 w-full">
             <slot />
         </main>
     </div>
+
     <button
         class="floating-button bg-primary text-white rounded-none w-12 h-12 flex items-center justify-center shadow-lg {isVisible
             ? ''
@@ -52,11 +54,10 @@
     >
         <FaChevronUp />
     </button>
-    <!-- <footer class="flex bg-secondary">
-        <FooterComponent />
-        </footer> -->
 
-    
+    <footer class="bg-secondary">
+        <FooterComponent />
+    </footer>
 </div>
 
 <style>
@@ -78,6 +79,6 @@
     .floating-button.hidden {
         opacity: 0;
         pointer-events: none;
-        transform: translateY(20px); /* Slide down when hidden */
+        transform: translateY(20px);
     }
 </style>
