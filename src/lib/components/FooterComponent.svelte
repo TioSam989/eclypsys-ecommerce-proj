@@ -45,10 +45,10 @@
     ];
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-1 flex-col w-screen">
     <div class="flex flex-1 px-72 border-b-2">
         <div
-            class="flex flex-row justify-center pr-16 py-4 uppercase font-bold border-r-2"
+            class="flex flex-row justify-center py-4 uppercase font-bold "
         >
             <span class="text-black">Sign up to newsletter</span>
         </div>

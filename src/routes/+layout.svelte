@@ -1,31 +1,33 @@
 <script>
     // @ts-nocheck
-    import "../app.scss"
-    import "../../static/output.css"
-    import HeaderNavTop from "$lib/components/HeaderNavTop.svelte"
-    import HeaderNavMain from "$lib/components/HeaderNavMain.svelte"
-    import SubHeaderNav from "$lib/components/SubHeaderNav.svelte"
-    import FooterComponent from "$lib/components/FooterComponent.svelte"
-    import { onMount } from "svelte"
+    import "../app.scss";
+    import "../../static/output.css";
+    import HeaderNavTop from "$lib/components/HeaderNavTop.svelte";
+    import HeaderNavMain from "$lib/components/HeaderNavMain.svelte";
+    import SubHeaderNav from "$lib/components/SubHeaderNav.svelte";
+    import FooterComponent from "$lib/components/FooterComponent.svelte";
+    import FaChevronUp from "svelte-icons/fa/FaChevronUp.svelte";
 
-    let isVisible = false
+    import { onMount } from "svelte";
+
+    let isVisible = false;
 
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
-        })
-    }
+        });
+    };
 
     onMount(() => {
-        const handleScroll = () => (isVisible = window.scrollY > 50)
+        const handleScroll = () => (isVisible = window.scrollY > 50);
 
-        window.addEventListener("scroll", handleScroll)
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
-            window.removeEventListener("scroll", handleScroll)
-        }
-    })
+            window.removeEventListener("scroll", handleScroll);
+        };
+    });
 </script>
 
 <div class="flex flex-col h-screen w-screen">
@@ -36,21 +38,23 @@
             <SubHeaderNav />
         </div>
     </header>
-    <div class="flex flex-col h-screen w-screen px-72">
+    <div class="flex flex-1 flex-col h-screen w-screen px-72">
         <main class="flex flex-1">
             <slot />
         </main>
     </div>
-    <footer class="bg-secondary">
+    <footer class="flex bg-secondary">
         <FooterComponent />
     </footer>
 
     <button
-        class="floating-button {isVisible ? '' : 'hidden'}"
+        class="floating-button bg-primary text-white rounded-none w-12 h-12 flex items-center justify-center shadow-lg {isVisible
+            ? ''
+            : 'hidden'}"
         on:click={scrollToTop}
         aria-label="Scroll to top"
     >
-        ↑
+        <FaChevronUp />
     </button>
 </div>
 
@@ -59,10 +63,8 @@
         position: fixed;
         bottom: 1.5rem;
         right: 1.5rem;
-        background-color: #007bff; /* Customize the color */
         color: white;
         padding: 0.75rem 1rem;
-        border-radius: 50%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         cursor: pointer;
         font-size: 1.5rem;
@@ -76,9 +78,5 @@
         opacity: 0;
         pointer-events: none;
         transform: translateY(20px); /* Slide down when hidden */
-    }
-
-    .floating-button:hover {
-        background-color: #0056b3; /* Darker shade on hover */
     }
 </style>
