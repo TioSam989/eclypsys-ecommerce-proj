@@ -1,3 +1,7 @@
-<div class="flex flex-1 w-screen bg-gray-800">
-   <p>CONTENT</p>
+<script>
+   import FirstContent from "$lib/components/FirstContent.svelte";
+</script>
+
+<div class="flex flex-1 w-screen ">
+   <FirstContent />
 </div>

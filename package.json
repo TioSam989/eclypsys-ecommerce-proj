@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "concurrently": "^9.1.0",
+    "odoo-xmlrpc": "^1.0.8",
     "sass": "^1.81.0",
     "svelte-icons": "^2.1.0"
   }
