@@ -39,13 +39,13 @@
         </div>
     </header>
     <div class="flex flex-1 flex-col h-screen w-screen px-72">
-        <main class="flex flex-1">
+        <main class="flex flex-1 w-full">
             <slot />
         </main>
     </div>
-    <footer class="flex bg-secondary">
+    <!-- <footer class="flex bg-secondary">
         <FooterComponent />
-    </footer>
+        </footer> -->
 
     <button
         class="floating-button bg-primary text-white rounded-none w-12 h-12 flex items-center justify-center shadow-lg {isVisible
