@@ -18,9 +18,6 @@ A test for a company, built using Svelte, typescript, tailwind and scss.
 ## Run
 
 To run the project, you will only need to use the script dev.
-## Run
-
-To run the project, you will only need to use the script dev.
 
 ```bash
 bun dev
