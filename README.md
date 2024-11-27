@@ -15,6 +15,14 @@ A test for a company, built using Svelte, typescript, tailwind and scss.
 - Bun(optional, can just update the package.json and run with npm/dino/yarn/...)
 - Concurrently
 
+## Install
+
+To install dependencies of project, just run the following command:
+
+```bash
+bun install
+```
+
 ## Run
 
 To run the project, you will only need to use the script dev.
