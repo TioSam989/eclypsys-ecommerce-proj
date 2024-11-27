@@ -1,41 +1,47 @@
 <script lang="ts">
-    import type { Product } from "../../interfaces/product";
+    import type { ApiProduct } from "../../interfaces/apiData";
 
-    export let product: Product;
+    export let product: ApiProduct;
 </script>
 
 <div
-    class={`flex flex-col md:flex-row items-center justify-center gap-8 w-full bg-gray-100 ${!!product?.hasBackground ? "text-white" : ""}`}
+    class="flex flex-col bg-white border rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300"
 >
-    <div
-        class={`flex flex-1 flex-col items-start justify-center gap-4 h-full w-full p-10 ${product?.hasBackground ? "bg-primary" : "bg-transparent"}`}
-    >
-        <span class="uppercase font-semibold text-lg uppercase"
-            >{product?.type}{product?.shippingData
-                ? ` - ${product.shippingData}`
-                : null}</span
-        >
-        <span class="uppercase font-semibold text-4xl uppercase"
-            >{product?.name}</span
-        >
-        <span class="uppercase font-semibold text-lg"
-            >{product?.price ? `$${product.price}` : null}</span
-        >
-        <button
-            class="text-white px-6 py-2 uppercase relative overflow-hidden group bg-primary"
-        >
-            <span
-                class="absolute inset-0 bg-black translate-y-full transition-transform duration-300 group-hover:translate-y-0"
-            ></span>
-            <span class="relative z-10 text-xs">Shop now</span>
-        </button>
-    </div>
-
-    <div class="flex flex-1 item-center justify-center w-full py-4">
+    {#if product.img}
         <img
-            alt="product"
-            class="object-contain w-3/5 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto"
-            src="https://placehold.co/700x800/png"
+            src={product.img}
+            alt={product.name}
+            class="w-full h-40 object-cover rounded-t-md"
         />
+    {:else}
+        <div
+            class="w-full h-40 bg-gray-200 flex items-center justify-center rounded-t-md"
+        >
+            <span class="text-gray-400">No Image</span>
+        </div>
+    {/if}
+
+    <div class="flex flex-col mt-4">
+        <h3 class="text-lg font-semibold text-gray-800 truncate">
+            {product.name}
+        </h3>
+        {#if product.category}
+            <span class="text-sm text-gray-500">{product.category.name}</span>
+        {:else}
+            <span class="text-sm text-gray-500">Uncategorized</span>
+        {/if}
+
+        <p class="text-sm text-gray-600 mt-1 capitalize">{product.type}</p>
+
+        <div class="flex justify-between items-center mt-4">
+            <span class="text-xl font-bold text-primary"
+                >{`$${product.price.toFixed(2)}`}</span
+            >
+            <button
+                class="text-sm text-white bg-primary px-3 py-1 rounded-md hover:bg-opacity-90"
+            >
+                Buy Now
+            </button>
+        </div>
     </div>
 </div>
