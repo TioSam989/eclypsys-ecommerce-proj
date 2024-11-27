@@ -1,38 +1,28 @@
-# sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+# eCommerce Front-end - Eclypsys
+A test for a company, built using Svelte, tailwind and scss.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Attention
 
-# create a new project in my-app
-npx sv create my-app
-```
+- You need to set up the [eclypsys-backend](https://github.com/TioSam989/eclypsys-backend) backend server to run the project
+- Prefer use the master branch to see what I've done
+- Any code modification will be only merged at dawn
 
-## Developing
+## Dependencies
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Svelte
+- Bun(optional, can just update the package.json and run with npm/dino/yarn/...)
+- Concurrently
 
-```bash
-npm run dev
+## Run
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+To run the project, you will only need to use the script dev.
+## Run
 
-## Building
-
-To create a production version of your app:
+To run the project, you will only need to use the script dev.
 
 ```bash
-npm run build
+bun dev
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
