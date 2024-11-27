@@ -23,7 +23,7 @@
 
     <div class="flex flex-col mt-4">
         <h3 class="text-lg font-semibold text-gray-800 truncate">
-            {product.name}
+            {product.name.split("]")[1]}
         </h3>
         {#if product.category}
             <span class="text-sm text-gray-500">{product.category.name}</span>

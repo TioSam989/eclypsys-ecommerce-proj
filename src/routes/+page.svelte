@@ -42,7 +42,6 @@
         try {
             // Fetch de produtos direto do backend
             bestSellers = await fetchBestSellers(5);
-            console.log('MEU CU')
         } catch (err) {
             console.error("Erro ao buscar bestsellers:", err);
         } finally {
